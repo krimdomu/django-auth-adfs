@@ -21,6 +21,7 @@ class Settings(object):
         self.GROUP_CLAIM = "group"
         self.CLAIM_MAPPING = {}
         self.LOGIN_EXEMPT_URLS = []
+        self.VERIFY_IAT = None
 
         required_settings = [
             "SERVER",
