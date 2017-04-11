@@ -183,7 +183,7 @@ class AdfsBackend(ModelBackend):
                     'verify_signature': True,
                     'verify_exp': True,
                     'verify_nbf': True,
-                    'verify_iat': True,
+                    'verify_iat': (True if settings.VERIFY_IAT else False),
                     'verify_aud': (True if settings.AUDIENCE else False),
                     'verify_iss': (True if settings.ISSUER else False),
                     'require_exp': False,
